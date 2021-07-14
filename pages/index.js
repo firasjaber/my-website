@@ -59,7 +59,7 @@ export default function Home() {
           FIRAS JABER
         </h1>
         <div className='opacity-80 tracking-wider mb-2'>
-          A Full-Stack Developer, Designer.
+          A Full-Stack Developer and Designer.
         </div>
         <div className='flex space-x-1 mt-1 pr-2'>
           <svg viewBox='0 0 128 128'>
