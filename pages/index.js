@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Technologies from '../components/Technologies';
 
 export default function Home() {
@@ -63,6 +64,11 @@ export default function Home() {
           A Full-Stack Developer and Designer.
         </div>
         <Technologies />
+        <div className='flex items-center justify-center'>
+          <div className='p-1 px-3 mt-8 text-lg text-gray-200 hover:bg-gray-200 hover:bg-opacity-20	 hover:text-gray-50 transition-all ease-in-out'>
+            <Link href='/home'>Welcome &gt;</Link>
+          </div>
+        </div>
       </div>
     </div>
   );
