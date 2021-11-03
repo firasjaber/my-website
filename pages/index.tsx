@@ -43,6 +43,31 @@ export default function Home() {
     };
     run();
   }, []);
+  //
+  useEffect(() => {
+    let data = [
+      {
+        text: 'A Full-Stack Developer and Designer. ',
+      },
+    ];
+
+    var allElements = document.getElementsByClassName('typeing');
+    for (var j = 0; j < allElements.length; j++) {
+      var currentElementId = allElements[j].id;
+      var element: HTMLElement | any =
+        document.getElementById(currentElementId);
+
+      // type code
+      var i = 0,
+        text;
+      (function type(): any {
+        text = data[0].text.slice(0, ++i);
+        if (text === data[0].text) return true;
+        element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
+        setTimeout(type, 60);
+      })();
+    }
+  }, []);
   return (
     <div>
       <Head>
@@ -61,7 +86,7 @@ export default function Home() {
           FIRAS JABER
         </h1>
         <div className='opacity-80 tracking-wider mb-2'>
-          A Full-Stack Developer and Designer.
+          <span id='AboutDevTypeText' className='typeing'></span>
         </div>
         <Technologies />
         <div className='flex items-center justify-center'>

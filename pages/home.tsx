@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Sidebar from 'components/Sidebar';
 
 export default function Home() {
   useEffect(() => {
@@ -52,8 +53,9 @@ export default function Home() {
       <canvas id='canv' width='32' height='32'></canvas>
       <div id='overlay'></div>
       <div className='font-scode absolute text-white z-10 w-screen'>
-        <div className='mx-auto container max-w-xl'>
+        <div className='mx-auto container p-8 max-w-xl'>
           <Navbar />
+          <Sidebar />
         </div>
       </div>
     </div>
