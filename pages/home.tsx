@@ -4,23 +4,23 @@ import Navbar from '../components/Navbar';
 
 export default function Home() {
   useEffect(() => {
-    var c = document.getElementById('canv');
-    var $ = c.getContext('2d');
-    var col = function (x, y, r, g, b) {
+    var c = document.getElementById('canv') as HTMLCanvasElement;
+    var $: CanvasRenderingContext2D | any = c.getContext('2d');
+    var col = function (x: number, y: number, r: number, g: number, b: Number) {
       $.fillStyle = 'rgb(' + r + ',' + g + ',' + b + ')';
       $.fillRect(x, y, 1, 1);
     };
-    var R = function (x, y, t) {
+    var R = function (x: number, y: number, t: number) {
       return Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t));
     };
-    var G = function (x, y, t) {
+    var G = function (x: number, y: number, t: number) {
       return Math.floor(
         192 +
           64 *
             Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)
       );
     };
-    var B = function (x, y, t) {
+    var B = function (x: number, y: number, t: number) {
       return Math.floor(
         192 +
           64 *
