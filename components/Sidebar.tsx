@@ -19,7 +19,7 @@ const Sidebar = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   return (
     <div
-      className={`container mx-auto p-6 px-8 h-screen absolute top-0 left-0 ${
+      className={`container mx-auto p-6 px-8 h-screen absolute top-0 left-0 sm:hidden ${
         isOpen && 'bg-opacity-40  bg-black'
       }`}
       style={{ backdropFilter: isOpen ? 'blur(2px)' : '' }}

@@ -8,7 +8,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className='w-full flex justify-between mx-auto items-center mt-10'>
+    <div className='hidden w-full  justify-between mx-auto items-center mt-10 sm:flex'>
       <ul className='flex justify-between'>
         <li className='px-2 py-1 hover:bg-gray-200 hover:bg-opacity-20 hover:text-gray-50 cursor-pointer transition-all ease-in-out'>
           <Link href='/'>/firrj</Link>
