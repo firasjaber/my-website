@@ -20,9 +20,9 @@ const Sidebar = () => {
   return (
     <div
       className={`container mx-auto p-6 px-8 h-screen absolute top-0 left-0 sm:hidden ${
-        isOpen && 'bg-opacity-40  bg-black'
+        isOpen && 'bg-opacity-60  bg-black'
       }`}
-      style={{ backdropFilter: isOpen ? 'blur(2px)' : '' }}
+      style={{ backdropFilter: isOpen ? 'blur(3px)' : '' }}
     >
       <div className='flex justify-between items-center'>
         <div>/firrj</div>
