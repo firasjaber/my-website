@@ -4,9 +4,9 @@ import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 
 const links = [
-  { href: '/', label: 'work' },
-  { href: '/', label: 'projects' },
-  { href: '/', label: 'about' },
+  { href: '/work', label: 'work' },
+  { href: '/projects', label: 'projects' },
+  { href: '/about', label: 'about' },
 ];
 
 const variants = {

@@ -3,14 +3,34 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Sidebar from 'components/Sidebar';
 import {
+  AdobeAiIcon,
+  AdobePsIcon,
+  AdobexdIcon,
+  AwsIcon,
+  AzureIcon,
+  CsharpIcon,
   CssIcon,
   DockerIcon,
+  DotnetIcon,
+  FigmaIcon,
+  FirebaseIcon,
+  GitIcon,
+  GraphqlIcon,
   HtmlIcon,
   JavaIcon,
   JsIcon,
+  LinuxIcon,
+  MongoIcon,
+  MysqlIcon,
   NextjsIcon,
+  NginxIcon,
+  NodeIcon,
+  OracledbIcon,
   PhpIcon,
+  PostgresIcon,
   ReactIcon,
+  RedisIcon,
+  SymfonyIcon,
   TsIcon,
 } from 'components/icons/DevIcons';
 
@@ -84,34 +104,64 @@ export default function Home() {
               Here is a list of tools and languages that I am proficient with
               and used in previous projects :
             </p>
-            <div className='mt-2 font-varella font-bold tracking-wide'>
+            <div className='mt-4 font-varella font-bold tracking-wide'>
               Programming Languages :
-              <div className='m-2 grid grid-cols-3'>
+              <div className='m-2 grid grid-cols-3 gap-y-3'>
                 <Tech icon={<JsIcon />} name='Javascript' />
                 <Tech icon={<TsIcon />} name='Typescript' />
                 <Tech icon={<JavaIcon />} name='Java' />
+                <Tech icon={<CsharpIcon />} name='C#' />
+                <Tech icon={<PhpIcon />} name='PHP' />
               </div>
             </div>
-            <div className='mt-2 font-varella font-bold tracking-wide'>
+            <div className='mt-4 font-varella font-bold tracking-wide'>
               Frontend Technologies :
-              <div className='m-2 grid grid-cols-3'>
+              <div className='m-2 grid grid-cols-3 gap-y-3'>
                 <Tech icon={<HtmlIcon />} name='HTML' />
                 <Tech icon={<CssIcon />} name='CSS' />
                 <Tech icon={<ReactIcon />} name='Reactjs' />
                 <Tech icon={<NextjsIcon />} name='Nextjs' />
               </div>
             </div>
-            <div className='mt-2 font-varella font-bold tracking-wide'>
-              Backend Technologies :<div className='m-2 grid grid-cols-3'></div>
+            <div className='mt-4 font-varella font-bold tracking-wide'>
+              Backend Technologies :
+              <div className='m-2 grid grid-cols-3 gap-y-3'>
+                <Tech icon={<NodeIcon />} name='Nodejs' />
+                <Tech icon={<RedisIcon />} name='Redis' />
+                <Tech icon={<GraphqlIcon />} name='GraphQL' />
+                <Tech icon={<DotnetIcon />} name='ASP.NET' />
+                <Tech icon={<SymfonyIcon />} name='Symfony' />
+                <Tech icon={<FirebaseIcon />} name='Firebase' />
+              </div>
             </div>
-            <div className='mt-2 font-varella font-bold tracking-wide'>
-              Devops :
+            <div className='mt-4 font-varella font-bold tracking-wide'>
+              Devops and Misc. tools :
+              <div className='m-2 grid grid-cols-3 gap-y-3'>
+                <Tech icon={<DockerIcon />} name='Docker' />
+                <Tech icon={<LinuxIcon />} name='Linux' />
+                <Tech icon={<NginxIcon />} name='NGINX' />
+                <Tech icon={<GitIcon />} name='Git' />
+                <Tech icon={<AwsIcon />} name='AWS' />
+                <Tech icon={<AzureIcon />} name='Azure' />
+              </div>
             </div>
-            <div className='mt-2 font-varella font-bold tracking-wide'>
+            <div className='mt-4 font-varella font-bold tracking-wide'>
               Databases :
+              <div className='m-2 grid grid-cols-3 gap-y-3'>
+                <Tech icon={<PostgresIcon />} name='PostgresQL' />
+                <Tech icon={<MongoIcon />} name='MongoDB' />
+                <Tech icon={<MysqlIcon />} name='MySQL' />
+                <Tech icon={<OracledbIcon />} name='OracleDB' />
+              </div>
             </div>
-            <div className='mt-2 font-varella font-bold tracking-wide'>
+            <div className='mt-4 font-varella font-bold tracking-wide'>
               Design :
+              <div className='m-2 grid grid-cols-3 gap-y-3'>
+                <Tech icon={<FigmaIcon />} name='Figma' />
+                <Tech icon={<AdobexdIcon />} name='Adobe XD' />
+                <Tech icon={<AdobePsIcon />} name='Adobe PS' />
+                <Tech icon={<AdobeAiIcon />} name='Adobe AI' />
+              </div>
             </div>
             <p className='mt-6 text-gray-300 font-varella'>
               You can also check my work experience, and some of the projects i
@@ -129,7 +179,7 @@ interface TechProps {
 }
 const Tech = ({ icon, name }: TechProps) => {
   return (
-    <div className='flex items-center space-x-3 my-1 text-gray-200 font-thin text-sm font-mono'>
+    <div className='flex items-center space-x-3  text-gray-200 font-thin text-sm font-mono'>
       {icon}
       <div> {name} </div>
     </div>
