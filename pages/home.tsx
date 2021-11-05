@@ -33,6 +33,7 @@ import {
   SymfonyIcon,
   TsIcon,
 } from 'components/icons/DevIcons';
+import Link from 'next/link';
 
 export default function Home() {
   useEffect(() => {
@@ -163,9 +164,16 @@ export default function Home() {
                 <Tech icon={<AdobeAiIcon />} name='Adobe AI' />
               </div>
             </div>
-            <p className='mt-6 text-gray-300 font-varella'>
-              You can also check my work experience, and some of the projects i
-              have worked on.
+            <p className='mt-10 text-gray-300 font-varella'>
+              You can also check my{' '}
+              <span className='underline hover:text-gray-100 transition-all ease-in-out'>
+                <Link href='/work'>work</Link>
+              </span>{' '}
+              experience , and some of the{' '}
+              <span className='underline hover:text-gray-100 transition-all ease-in-out'>
+                <Link href='/projects'>projects</Link>
+              </span>{' '}
+              i have worked on.
             </p>
           </div>
         </div>

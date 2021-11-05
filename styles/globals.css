@@ -87,3 +87,7 @@ canvas {
     visibility: hidden;
   }
 }
+
+.ball-transitions {
+  transition: opacity 0.4s, transform 0.1s;
+}
