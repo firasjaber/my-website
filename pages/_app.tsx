@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { loadCursor } from 'utils/cursor';
 import NextNProgress from 'nextjs-progressbar';
 import '../styles/globals.css';
+import { playClick } from 'utils/playSound';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const ballCanvas = useRef<HTMLDivElement>(null);
@@ -14,6 +15,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     return loadCursor(ballCanvas.current);
   }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+    window.document.addEventListener('click', playClick);
+  });
   return (
     <div>
       <div
