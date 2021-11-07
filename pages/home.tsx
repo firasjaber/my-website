@@ -89,79 +89,94 @@ export default function Home() {
           <Navbar />
           <Sidebar />
           <div className='mt-10'>
-            <div className='font-varella font-bold tracking-wide text-2xl sm:text-3xl'>
+            <h1 className='font-varella font-bold tracking-wide text-2xl sm:text-3xl'>
               Hey, I&apos;m Firas Jaber ✌️
-            </div>
+            </h1>
             <p className='mt-2 text-gray-300 font-varella'>
               i&apos;m a 20 years old developer and designer from Tunisia. I am
               interested in software development, architecture, computer
               networking, and design. I enjoy each process of building a
               product, from conception to deployment.
             </p>
-            <div className='mt-8 font-varella font-bold tracking-wide text-xl'>
+            <hr className='my-8 opacity-40' />
+            <h2 className='font-varella font-bold tracking-wide text-xl'>
               Technical skills
-            </div>
+            </h2>
             <p className='mt-2 text-gray-300 font-varella'>
               Here is a list of tools and languages that I am proficient with
               and used in previous projects :
             </p>
-            <div className='mt-4 font-varella font-bold tracking-wide'>
-              Programming Languages :
-              <div className='m-2 grid grid-cols-3 gap-y-3'>
-                <Tech icon={<JsIcon />} name='Javascript' />
-                <Tech icon={<TsIcon />} name='Typescript' />
-                <Tech icon={<JavaIcon />} name='Java' />
-                <Tech icon={<CsharpIcon />} name='C#' />
-                <Tech icon={<PhpIcon />} name='PHP' />
+            <div className='mt-6 space-y-6'>
+              <div>
+                <h3 className='mb-4 font-varella font-bold tracking-wide'>
+                  Programming Languages :
+                </h3>
+                <div className='m-2 grid grid-cols-3 gap-y-3'>
+                  <Tech icon={<JsIcon />} name='Javascript' />
+                  <Tech icon={<TsIcon />} name='Typescript' />
+                  <Tech icon={<JavaIcon />} name='Java' />
+                  <Tech icon={<CsharpIcon />} name='C#' />
+                  <Tech icon={<PhpIcon />} name='PHP' />
+                </div>
               </div>
-            </div>
-            <div className='mt-4 font-varella font-bold tracking-wide'>
-              Frontend Technologies :
-              <div className='m-2 grid grid-cols-3 gap-y-3'>
-                <Tech icon={<HtmlIcon />} name='HTML' />
-                <Tech icon={<CssIcon />} name='CSS' />
-                <Tech icon={<ReactIcon />} name='Reactjs' />
-                <Tech icon={<NextjsIcon />} name='Nextjs' />
+              <div>
+                <h3 className='mb-4 font-varella font-bold tracking-wide'>
+                  Frontend Technologies :
+                </h3>
+                <div className='m-2 grid grid-cols-3 gap-y-3'>
+                  <Tech icon={<HtmlIcon />} name='HTML' />
+                  <Tech icon={<CssIcon />} name='CSS' />
+                  <Tech icon={<ReactIcon />} name='Reactjs' />
+                  <Tech icon={<NextjsIcon />} name='Nextjs' />
+                </div>
               </div>
-            </div>
-            <div className='mt-4 font-varella font-bold tracking-wide'>
-              Backend Technologies :
-              <div className='m-2 grid grid-cols-3 gap-y-3'>
-                <Tech icon={<NodeIcon />} name='Nodejs' />
-                <Tech icon={<RedisIcon />} name='Redis' />
-                <Tech icon={<GraphqlIcon />} name='GraphQL' />
-                <Tech icon={<DotnetIcon />} name='ASP.NET' />
-                <Tech icon={<SymfonyIcon />} name='Symfony' />
-                <Tech icon={<FirebaseIcon />} name='Firebase' />
+              <div>
+                <h3 className='mb-4 font-varella font-bold tracking-wide'>
+                  Backend Technologies :
+                </h3>
+                <div className='m-2 grid grid-cols-3 gap-y-3'>
+                  <Tech icon={<NodeIcon />} name='Nodejs' />
+                  <Tech icon={<RedisIcon />} name='Redis' />
+                  <Tech icon={<GraphqlIcon />} name='GraphQL' />
+                  <Tech icon={<DotnetIcon />} name='ASP.NET' />
+                  <Tech icon={<SymfonyIcon />} name='Symfony' />
+                  <Tech icon={<FirebaseIcon />} name='Firebase' />
+                </div>
               </div>
-            </div>
-            <div className='mt-4 font-varella font-bold tracking-wide'>
-              Devops and Misc. tools :
-              <div className='m-2 grid grid-cols-3 gap-y-3'>
-                <Tech icon={<DockerIcon />} name='Docker' />
-                <Tech icon={<LinuxIcon />} name='Linux' />
-                <Tech icon={<NginxIcon />} name='NGINX' />
-                <Tech icon={<GitIcon />} name='Git' />
-                <Tech icon={<AwsIcon />} name='AWS' />
-                <Tech icon={<AzureIcon />} name='Azure' />
+              <div>
+                <h3 className='mb-4 font-varella font-bold tracking-wide'>
+                  Devops and Misc. tools :
+                </h3>
+                <div className='m-2 grid grid-cols-3 gap-y-3'>
+                  <Tech icon={<DockerIcon />} name='Docker' />
+                  <Tech icon={<LinuxIcon />} name='Linux' />
+                  <Tech icon={<NginxIcon />} name='NGINX' />
+                  <Tech icon={<GitIcon />} name='Git' />
+                  <Tech icon={<AwsIcon />} name='AWS' />
+                  <Tech icon={<AzureIcon />} name='Azure' />
+                </div>
               </div>
-            </div>
-            <div className='mt-4 font-varella font-bold tracking-wide'>
-              Databases :
-              <div className='m-2 grid grid-cols-3 gap-y-3'>
-                <Tech icon={<PostgresIcon />} name='PostgresQL' />
-                <Tech icon={<MongoIcon />} name='MongoDB' />
-                <Tech icon={<MysqlIcon />} name='MySQL' />
-                <Tech icon={<OracledbIcon />} name='OracleDB' />
+              <div>
+                <h3 className='mb-4 font-varella font-bold tracking-wide'>
+                  Databases :
+                </h3>
+                <div className='m-2 grid grid-cols-3 gap-y-3'>
+                  <Tech icon={<PostgresIcon />} name='PostgresQL' />
+                  <Tech icon={<MongoIcon />} name='MongoDB' />
+                  <Tech icon={<MysqlIcon />} name='MySQL' />
+                  <Tech icon={<OracledbIcon />} name='OracleDB' />
+                </div>
               </div>
-            </div>
-            <div className='mt-4 font-varella font-bold tracking-wide'>
-              Design :
-              <div className='m-2 grid grid-cols-3 gap-y-3'>
-                <Tech icon={<FigmaIcon />} name='Figma' />
-                <Tech icon={<AdobexdIcon />} name='Adobe XD' />
-                <Tech icon={<AdobePsIcon />} name='Adobe PS' />
-                <Tech icon={<AdobeAiIcon />} name='Adobe AI' />
+              <div>
+                <h3 className='mb-4 font-varella font-bold tracking-wide'>
+                  Design :
+                </h3>
+                <div className='m-2 grid grid-cols-3 gap-y-3'>
+                  <Tech icon={<FigmaIcon />} name='Figma' />
+                  <Tech icon={<AdobexdIcon />} name='Adobe XD' />
+                  <Tech icon={<AdobePsIcon />} name='Adobe PS' />
+                  <Tech icon={<AdobeAiIcon />} name='Adobe AI' />
+                </div>
               </div>
             </div>
             <p className='mt-10 text-gray-300 font-varella'>
