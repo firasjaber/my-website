@@ -1,3 +1,9 @@
-export default function projects() {
-  return <div>projects page</div>;
+import { PageLayout } from 'components/PageLayout';
+
+export default function Projects() {
+  return (
+    <PageLayout>
+      <div>projects page</div>
+    </PageLayout>
+  );
 }

@@ -1,3 +1,9 @@
-export default function about() {
-  return <div>about page</div>;
+import { PageLayout } from 'components/PageLayout';
+
+export default function About() {
+  return (
+    <PageLayout>
+      <div>about page</div>
+    </PageLayout>
+  );
 }
