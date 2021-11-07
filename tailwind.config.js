@@ -31,6 +31,10 @@ module.exports = {
       transformOrigin: {
         70: '70% 70%',
       },
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(120px, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(120px, 1fr))',
+      },
     },
   },
   variants: {
