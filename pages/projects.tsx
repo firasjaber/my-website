@@ -53,7 +53,7 @@ export const Project = () => {
         <span className='p-2 px-4 text-gray-200 cursor-pointer hover:bg-gray-200 hover:bg-opacity-20	 hover:text-gray-50 transition-all ease-in-out'>
           More &gt;
         </span>
-        <span className='p-2 px-4 text-gray-200 cursor-pointer hover:bg-gray-200 hover:bg-opacity-20	 hover:text-gray-50 transition-all ease-in-out'>
+        <span className='p-2 px-4 text-gray-400 cursor-not-allowed'>
           Visit &gt;
         </span>
         <span className='p-2 px-4 text-gray-200 cursor-pointer hover:bg-gray-200 hover:bg-opacity-20	 hover:text-gray-50 transition-all ease-in-out'>
