@@ -57,19 +57,19 @@ export default function Home() {
           <h3 className='mb-4 font-varella font-bold tracking-wide'>
             Programming Languages :
           </h3>
-          <div className='m-2 grid grid-cols-3 gap-y-3'>
+          <div className='m-2 grid grid-cols-auto-fit md:grid-cols-4  gap-4'>
             <Tech icon={<JsIcon />} name='Javascript' />
             <Tech icon={<TsIcon />} name='Typescript' />
             <Tech icon={<JavaIcon />} name='Java' />
-            <Tech icon={<CsharpIcon />} name='C#' />
             <Tech icon={<PhpIcon />} name='PHP' />
+            <Tech icon={<CsharpIcon />} name='C#' />
           </div>
         </div>
         <div>
           <h3 className='mb-4 font-varella font-bold tracking-wide'>
             Frontend Technologies :
           </h3>
-          <div className='m-2 grid grid-cols-3 gap-y-3'>
+          <div className='m-2 grid grid-cols-auto-fit md:grid-cols-4  gap-4'>
             <Tech icon={<HtmlIcon />} name='HTML' />
             <Tech icon={<CssIcon />} name='CSS' />
             <Tech icon={<ReactIcon />} name='Reactjs' />
@@ -80,7 +80,7 @@ export default function Home() {
           <h3 className='mb-4 font-varella font-bold tracking-wide'>
             Backend Technologies :
           </h3>
-          <div className='m-2 grid grid-cols-3 gap-y-3'>
+          <div className='m-2 grid grid-cols-auto-fit md:grid-cols-4  gap-4'>
             <Tech icon={<NodeIcon />} name='Nodejs' />
             <Tech icon={<RedisIcon />} name='Redis' />
             <Tech icon={<GraphqlIcon />} name='GraphQL' />
@@ -93,7 +93,7 @@ export default function Home() {
           <h3 className='mb-4 font-varella font-bold tracking-wide'>
             Devops and Misc. tools :
           </h3>
-          <div className='m-2 grid grid-cols-3 gap-y-3'>
+          <div className='m-2 grid grid-cols-auto-fit md:grid-cols-4  gap-4'>
             <Tech icon={<DockerIcon />} name='Docker' />
             <Tech icon={<LinuxIcon />} name='Linux' />
             <Tech icon={<NginxIcon />} name='NGINX' />
@@ -106,7 +106,7 @@ export default function Home() {
           <h3 className='mb-4 font-varella font-bold tracking-wide'>
             Databases :
           </h3>
-          <div className='m-2 grid grid-cols-3 gap-y-3'>
+          <div className='m-2 grid grid-cols-auto-fit md:grid-cols-4  gap-4'>
             <Tech icon={<PostgresIcon />} name='PostgresQL' />
             <Tech icon={<MongoIcon />} name='MongoDB' />
             <Tech icon={<MysqlIcon />} name='MySQL' />
@@ -117,7 +117,7 @@ export default function Home() {
           <h3 className='mb-4 font-varella font-bold tracking-wide'>
             Design :
           </h3>
-          <div className='m-2 grid grid-cols-3 gap-y-3'>
+          <div className='m-2 grid grid-cols-auto-fit md:grid-cols-4  gap-4'>
             <Tech icon={<FigmaIcon />} name='Figma' />
             <Tech icon={<AdobexdIcon />} name='Adobe XD' />
             <Tech icon={<AdobePsIcon />} name='Adobe PS' />
