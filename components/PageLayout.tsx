@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React, { useEffect } from 'react';
+import { Footer } from './Footer';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
@@ -57,6 +58,7 @@ export const PageLayout: React.FC = ({ children }) => {
           <Navbar />
           <Sidebar />
           <div className='mt-14 sm:mt-10'>{children}</div>
+          <Footer />
         </div>
       </div>
     </div>
