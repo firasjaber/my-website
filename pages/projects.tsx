@@ -18,9 +18,12 @@ export default function Projects() {
   return (
     <PageLayout>
       <h1 className='font-varella font-bold tracking-wide text-xl sm:text-2xl'>
-        My Projects
+        Featured Projects
       </h1>
-      <div>here is the list of my personal and clients project : </div>
+      <div>
+        for the past 2 years, i have been working on cool clients and personal
+        projects, here is some of them :
+      </div>
       <div className='mt-12 space-y-10'>
         <Project />
         <hr className='opacity-30' />
