@@ -1,8 +1,15 @@
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import React, { useEffect } from 'react';
 import { Footer } from './Footer';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+
+const variants = {
+  hidden: { opacity: 0, x: -100, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export const PageLayout: React.FC = ({ children }) => {
   useEffect(() => {
@@ -57,7 +64,17 @@ export const PageLayout: React.FC = ({ children }) => {
         <div className='mx-auto container p-8 max-w-2xl'>
           <Navbar />
           <Sidebar />
-          <div className='mt-14 sm:mt-10'>{children}</div>
+          <motion.main
+            variants={variants} // Pass the variant object into Framer Motion
+            initial='hidden' // Set the initial state to variants.hidden
+            animate='enter' // Animated state to variants.enter
+            exit='exit' // Exit state (used later) to variants.exit
+            transition={{ type: 'spring', stiffness: 100 }}
+            className='mt-14 sm:mt-10'
+          >
+            {children}
+          </motion.main>
+
           <Footer />
         </div>
       </div>

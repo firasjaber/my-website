@@ -1,5 +1,6 @@
 import { GithubIcon, LinkedIn, Twitter } from 'components/icons/DevIcons';
 import { PageLayout } from 'components/PageLayout';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
