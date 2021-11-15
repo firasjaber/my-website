@@ -24,7 +24,7 @@ const projectsData = [
     shortDesc: 'Gaming Ecommerce Website',
     type: 'Freelance Project',
     longDesc:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam impedit ea ullam, sit vel minima quos quo exercitationem.',
+      'Gaming e-commerce website that has a minimalistic user interface and comes with back-office for managing products and handling orders. this website is built from scratch with Nextjs to support server-side generation and rendering to offer blazing fast performance and SEO results.',
     githubUrl: '',
     liveUrl: 'https://boxymall.com',
     readmeUrl: '',
@@ -34,7 +34,7 @@ const projectsData = [
     shortDesc: 'Vehicle Firm Management System',
     type: 'Internship Project',
     longDesc:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam impedit ea ullam, sit vel minima quos quo exercitationem.',
+      'Company management web application for organizing employees, tasks, and missions with rich admin functionalities and a clean user interface. The app is written in Typescript both for the backend and the frontend communicating with Graphql to provide front-to-back type safety and well-organized code structure.',
     githubUrl: 'https://github.com/firasjaber/rb-expertise',
     liveUrl: '',
     readmeUrl: '',
@@ -44,7 +44,7 @@ const projectsData = [
     shortDesc: 'Online Casino website',
     type: 'Freelance Project',
     longDesc:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam impedit ea ullam, sit vel minima quos quo exercitationem.',
+      'Online gambling website that provides real-time services and complete admins dashboard to manage users and their transactions integrated with third parties APIs for getting and handling games events.All the differenct services are written in Javascript with an NGINX reverse proxy and load balancer in front to provide high availability and excellent performance',
     githubUrl: '',
     liveUrl: '',
     readmeUrl: '',
@@ -54,7 +54,7 @@ const projectsData = [
     shortDesc: 'Books management web app',
     type: 'Personal Project',
     longDesc:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam impedit ea ullam, sit vel minima quos quo exercitationem.',
+      'Single page application to manage my booklist and store them for reading later or bookmarking, integrated with Google Books API, and have authentication for different users.',
     githubUrl: 'https://github.com/firasjaber/bookshelf',
     liveUrl: '',
     readmeUrl: '',
