@@ -1,10 +1,8 @@
 import {
   ChakraIcon,
   DockerIcon,
-  GitIcon,
   GraphqlIcon,
   JsIcon,
-  LinuxIcon,
   MongoIcon,
   NextjsIcon,
   NginxIcon,
@@ -61,6 +59,29 @@ const projectsData = [
   },
 ];
 
+const githubProjectsData = [
+  {
+    title: 'Inhouse-Bot',
+    desc: 'discord bot for in-house games.',
+    link: 'https://github.com/mrtolkien/inhouse_bot',
+  },
+  {
+    title: 'Portfolio',
+    desc: 'my personal website',
+    link: 'https://github.com/firasjaber/my-website',
+  },
+  {
+    title: 'FirrjLink',
+    desc: 'personal links shortener',
+    link: 'https://github.com/firasjaber/firrjlink',
+  },
+  {
+    title: 'TopGap',
+    desc: 'LoL Player Lookup app',
+    link: 'https://github.com/firasjaber/topgap',
+  },
+];
+
 export default function Projects() {
   return (
     <PageLayout>
@@ -105,8 +126,18 @@ export default function Projects() {
           <Tech icon={<MongoIcon />} name='MongoDB' />
         </Project>
       </div>
-      <p className='mt-20 text-gray-300 font-varella'>
-        You can also check some of my open source projects at my{' '}
+      <hr className='mt-10 opacity-30' />
+      <p className='my-8 text-gray-300 font-varella'>
+        Here is also a some of my own open sources projects or others i
+        contributed to :{' '}
+      </p>
+      <div className='m-2 grid grid-cols-1 md:grid-cols-2 gap-4'>
+        {githubProjectsData.map((p, i) => (
+          <GithubProject key={i} title={p.title} desc={p.desc} link={p.link} />
+        ))}
+      </div>
+      <p className='mt-8 text-gray-300 font-varella'>
+        View more on my{' '}
         <span className='underline hover:text-gray-100 transition-all ease-in-out'>
           <a
             href='https://github.com/firasjaber/'
@@ -179,6 +210,26 @@ export const Project: React.FC<ProjectProps> = ({ projectData, children }) => {
           )}
         </span>
       </div>
+    </div>
+  );
+};
+
+interface GithubProjectProps {
+  title: string;
+  desc: string;
+  link: string;
+}
+
+const GithubProject = ({ title, desc, link }: GithubProjectProps) => {
+  return (
+    <div className='p-3 border border-gray-400 hover:border-gray-200 rounded-md transition-all ease-in-out'>
+      <h3 className=''>{title}</h3>
+      <span className='text-sm text-gray-500'>{desc}</span>
+      <span className='block mt-2 text-sm underline hover:text-gray-100 transition-all ease-in-out'>
+        <a href={link} rel='noreferrer' target='_blank'>
+          view on github &#8599;
+        </a>
+      </span>
     </div>
   );
 };
