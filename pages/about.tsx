@@ -61,16 +61,56 @@ export default function About() {
             More...
           </h1>
           <p className='mt-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores
-            aut vero laudantium enim sed sapiente necessitatibus rem! Voluptates
-            magnam, dolores laborum blanditiis mollitia eaque rem cumque
-            veritatis nisi ipsum.
+            My passion for web development actually started before going to
+            college, since I was a kid, I was curious about technology in
+            general. I tried to learn many things in my childhood such as game
+            development, design, video editing, and more... but the one that I
+            liked the most and stuck with it is web development and I wanted to
+            pursue a career in it.
           </p>
           <p className='mt-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores
-            aut vero laudantium enim sed sapiente necessitatibus rem! Voluptates
-            magnam, dolores laborum blanditiis mollitia eaque rem cumque
-            veritatis nisi ipsum.
+            after picking up the basics, for the past 2 and a half years, I have
+            been building freelance & personal projects with cutting-edge modern
+            technologies and maintaining them.
+          </p>
+          <p className='mt-8'>
+            as for now, I have been obsessed with software architecture, cloud
+            infrastructure, DevOps, and web3. I have been learning a lot about
+            them by reading and practicing in some of my side projects. and I
+            want to take my career in one of those directions.
+          </p>
+        </div>
+        <hr className='opacity-30 my-10' />
+        <div>
+          <h1 className='font-varella font-bold tracking-wide text-lg sm:text-xl'>
+            Contact
+          </h1>
+          <p className='mt-3'>
+            I am most responsive through Discord DMs ({' '}
+            <span className='underline hover:text-gray-100 transition-all ease-in-out'>
+              firrj#4628
+            </span>{' '}
+            ). you can also reach me by emailing{' '}
+            <span className='underline hover:text-gray-100 transition-all ease-in-out'>
+              contact@firrj.me
+            </span>
+          </p>
+          <h1 className='mt-8 font-varella font-bold tracking-wide text-lg sm:text-xl'>
+            Thanks
+          </h1>
+          <p className='mt-3'>
+            Thanks for visiting. I hope you enjoyed your stay. The source code
+            for this website is available{' '}
+            <span className='underline hover:text-gray-100 transition-all ease-in-out'>
+              <a
+                href='https://github.com/firasjaber/personal-website'
+                rel='noreferrer'
+                target='_blank'
+              >
+                here &#8599;
+              </a>
+            </span>{' '}
+            .
           </p>
         </div>
       </div>
