@@ -50,7 +50,7 @@ const workData = [
 
 export default function Work() {
   return (
-    <PageLayout>
+    <PageLayout title='work'>
       <h1 className='font-varella font-bold tracking-wide text-xl sm:text-2xl'>
         My Work Experience
       </h1>

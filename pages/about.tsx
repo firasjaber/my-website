@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <PageLayout>
+    <PageLayout title='about'>
       <div>
         <h1 className='font-varella font-bold tracking-wide text-xl sm:text-2xl'>
           About me

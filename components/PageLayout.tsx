@@ -11,7 +11,11 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 };
 
-export const PageLayout: React.FC = ({ children }) => {
+interface Props {
+  title?: string;
+}
+
+export const PageLayout: React.FC<Props> = ({ children, title }) => {
   useEffect(() => {
     var c = document.getElementById('canv') as HTMLCanvasElement;
     var $: CanvasRenderingContext2D | any = c.getContext('2d');
@@ -54,7 +58,7 @@ export const PageLayout: React.FC = ({ children }) => {
   return (
     <div>
       <Head>
-        <title>Firas Jaber</title>
+        <title>{title ? 'Firas Jaber | ' + title : 'Firas Jaber'}</title>
         <meta name='description' content='Firas Jaber Personal Website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

@@ -84,7 +84,7 @@ const githubProjectsData = [
 
 export default function Projects() {
   return (
-    <PageLayout>
+    <PageLayout title='projects'>
       <h1 className='font-varella font-bold tracking-wide text-xl sm:text-2xl'>
         Featured Projects
       </h1>

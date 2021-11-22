@@ -34,7 +34,7 @@ import { PageLayout } from 'components/PageLayout';
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout title='home'>
       <h1 className='font-varella font-bold tracking-wide text-2xl sm:text-3xl'>
         Hey, I&apos;m Firas Jaber ✌️
       </h1>
