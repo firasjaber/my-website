@@ -128,11 +128,11 @@ export default function Home() {
       <p className='mt-10 text-gray-300 font-varella'>
         You can also check my{' '}
         <span className='underline hover:text-gray-100 transition-all ease-in-out'>
-          <Link href='/work'>work</Link>
+          <Link href='/work'>work &#8599;</Link>
         </span>{' '}
         experience , and some of the{' '}
         <span className='underline hover:text-gray-100 transition-all ease-in-out'>
-          <Link href='/projects'>projects</Link>
+          <Link href='/projects'>projects &#8599;</Link>
         </span>{' '}
         i have worked on.
       </p>
