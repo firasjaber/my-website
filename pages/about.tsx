@@ -103,7 +103,7 @@ export default function About() {
             for this website is available{' '}
             <span className='underline hover:text-gray-100 transition-all ease-in-out'>
               <a
-                href='https://github.com/firasjaber/personal-website'
+                href='https://github.com/firasjaber/my-website'
                 rel='noreferrer'
                 target='_blank'
               >
