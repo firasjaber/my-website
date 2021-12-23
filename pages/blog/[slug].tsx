@@ -7,14 +7,20 @@ import Markdown from './../../components/Markdown';
 import { PageLayout } from 'components/PageLayout';
 
 interface IProps {
-  article: BlogpostInfo;
+  blogpost: BlogpostInfo;
 }
 
-const Article: FunctionComponent<IProps> = ({ article }) => {
+const Article: FunctionComponent<IProps> = ({ blogpost }) => {
   return (
-    <PageLayout title={article.meta.title}>
+    <PageLayout title={blogpost.meta.title}>
       <div className='font-sans'>
-        <Markdown content={article.content} />
+        <div className='mb-10'>
+          <h1 className='font-bold text-3xl'>{blogpost.meta.title}</h1>
+          <span className='text-gray-200 opacity-60'>
+            {blogpost.meta.written_at + ' - ' + blogpost.meta.author}
+          </span>
+        </div>
+        <Markdown content={blogpost.content} />
       </div>
     </PageLayout>
   );
@@ -27,7 +33,7 @@ export async function getStaticProps({ ...ctx }) {
 
   const info = matter(content);
 
-  const article = {
+  const blogpost = {
     meta: {
       ...info.data,
       slug,
@@ -37,7 +43,7 @@ export async function getStaticProps({ ...ctx }) {
 
   return {
     props: {
-      article: article,
+      blogpost: blogpost,
     },
   };
 }

@@ -6,18 +6,26 @@ import Link from 'next/link';
 import { PageLayout } from 'components/PageLayout';
 
 interface IProps {
-  articles: BlogpostMeta[];
+  blogpost: BlogpostMeta[];
 }
 
-const Home: FunctionComponent<IProps> = ({ articles }) => {
+const Home: FunctionComponent<IProps> = ({ blogpost }) => {
   return (
-    <PageLayout title='Blog | Firas Jaber'>
-      {articles.map((article, i) => (
-        <div key={i}>
-          {' '}
-          <h2>{article.title}</h2>
-          <Link href={`/blog/${article.slug}`}>{article.slug}</Link>
-          <h3>{article.written_at}</h3>
+    <PageLayout title='Blog'>
+      <h1 className='font-varella font-bold tracking-wide text-xl sm:text-2xl lg:text-2xl mb-2'>
+        Blog posts
+      </h1>
+      <div className='mb-10'>
+        here is some blogposts i wrote that are related to web development,
+        software, and more :
+      </div>
+      {blogpost.map((blogpost, i) => (
+        <div key={i} className='space-y-2'>
+          <h2 className='text-xl font-semibold'>
+            <Link href={`/blog/${blogpost.slug}`}>{blogpost.title}</Link>
+          </h2>
+          <p className='opacity-60'>{blogpost.description}</p>
+          <h3 className='opacity-40'>{blogpost.written_at}</h3>
         </div>
       ))}
     </PageLayout>
@@ -27,7 +35,7 @@ const Home: FunctionComponent<IProps> = ({ articles }) => {
 export async function getStaticProps() {
   const files = fs.readdirSync('content/blog');
 
-  let articles = files.map((file) => {
+  let blogpost = files.map((file) => {
     const data = fs.readFileSync(`content/blog/${file}`).toString();
 
     return {
@@ -38,7 +46,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      articles: articles,
+      blogpost: blogpost,
     },
   };
 }
