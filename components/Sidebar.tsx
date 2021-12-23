@@ -6,6 +6,7 @@ import Hamburger from 'hamburger-react';
 const links = [
   { href: '/work', label: 'work' },
   { href: '/projects', label: 'projects' },
+  { href: '/blog', label: 'blog' },
   { href: '/about', label: 'about' },
 ];
 
