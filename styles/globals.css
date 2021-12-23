@@ -91,3 +91,7 @@ canvas {
 .ball-transitions {
   transition: opacity 0.4s, transform 0.1s;
 }
+
+pre {
+  padding: 0 !important;
+}

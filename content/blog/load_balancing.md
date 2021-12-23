@@ -14,6 +14,28 @@ so in conclusion : Load balancing is a process in which the workload is distribu
 
 last thing before we need to understand before we start, is Docker : **Docker** is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries , operation system and other dependencies, and ship it all out as one package.
 
+```ts
+import { fastify } from 'fastify';
+const PORT = process.env.PORT || 7000;
+
+const server = fastify();
+
+server.get('/', async (request, reply) => {
+  return { message: `hello world from ${process.env.INSTANCE_NAME}` };
+});
+
+const start = async () => {
+  try {
+    const address = await server.listen(PORT, '0.0.0.0');
+    console.log('Server started successfully on ', address);
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
+};
+start();
+```
+
 ## What we are going to do.
 
 in this article, we are going to Dockerize a really simple Nodejs HTTP server ( we can use any other framework / web application server and apply the same process ) then we are going to start two instances ( containers ) then configure NGINX as a load balancer to distrubute the load between the containers using round-robin method so we can increase the perormance and responsiveness of our apps and scale them.  

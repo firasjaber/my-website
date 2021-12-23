@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown';
-import { materialLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { FunctionComponent } from 'react';
 
@@ -14,9 +14,10 @@ const Markdown: FunctionComponent<IProps> = ({ content }) => {
 
       return !inline && match ? (
         <SyntaxHighlighter
-          style={materialLight}
+          style={vscDarkPlus}
           PreTag='div'
           language={match[1]}
+          showLineNumbers={true}
           {...props}
         >
           {String(children).replace(/\n$/, '')}
