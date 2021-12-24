@@ -22,7 +22,6 @@ const Sidebar = () => {
     if (document) {
       document.addEventListener('scroll', (e) => {
         let scrolled = document.scrollingElement!.scrollTop;
-        console.log(scrolled);
         if (scrolled >= 50) {
           setTop(false);
         } else {

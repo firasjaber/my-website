@@ -16,7 +16,7 @@ const Home: FunctionComponent<IProps> = ({ blogpost }) => {
         Blog posts
       </h1>
       <div className='mb-10'>
-        here is some blogposts i wrote that are related to web development,
+        here is some articles i wrote that are related to web development,
         software, and more :
       </div>
       {blogpost.map((blogpost, i) => (

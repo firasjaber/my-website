@@ -17,7 +17,7 @@ const Markdown: FunctionComponent<IProps> = ({ content }) => {
           style={vscDarkPlus}
           PreTag='div'
           language={match[1]}
-          showLineNumbers={true}
+          //showLineNumbers={true}
           {...props}
         >
           {String(children).replace(/\n$/, '')}
