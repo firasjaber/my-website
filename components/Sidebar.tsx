@@ -6,6 +6,7 @@ import Hamburger from 'hamburger-react';
 const links = [
   { href: '/work', label: 'work' },
   { href: '/projects', label: 'projects' },
+  { href: '/blog', label: 'blog' },
   { href: '/about', label: 'about' },
 ];
 
@@ -21,7 +22,6 @@ const Sidebar = () => {
     if (document) {
       document.addEventListener('scroll', (e) => {
         let scrolled = document.scrollingElement!.scrollTop;
-        console.log(scrolled);
         if (scrolled >= 50) {
           setTop(false);
         } else {
