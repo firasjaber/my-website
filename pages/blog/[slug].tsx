@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
-import styles from '../../styles/article.module.css';
 import { BlogpostInfo } from '../../interfaces/Blogpost';
 import Markdown from './../../components/Markdown';
 import { PageLayout } from 'components/PageLayout';
