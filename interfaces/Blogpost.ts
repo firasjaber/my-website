@@ -4,7 +4,7 @@ interface BlogpostMeta {
   written_at: string;
   description: string;
   author: string;
-  previewImage: string;
+  preview_image: string;
 }
 
 interface BlogpostInfo {

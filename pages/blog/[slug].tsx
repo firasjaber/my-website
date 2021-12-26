@@ -12,7 +12,7 @@ interface IProps {
 const Article: FunctionComponent<IProps> = ({ blogpost }) => {
   const metaTags = {
     url: 'https://firrj.me/blog/' + blogpost.meta.slug,
-    previewImage: blogpost.meta.previewImage,
+    previewImage: blogpost.meta.preview_image,
     siteName: 'firrj.me',
     title: blogpost.meta.title,
     desc: blogpost.meta.description,
