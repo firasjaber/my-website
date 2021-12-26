@@ -10,8 +10,15 @@ interface IProps {
 }
 
 const Article: FunctionComponent<IProps> = ({ blogpost }) => {
+  const metaTags = {
+    url: 'https://firrj.me/blog/' + blogpost.meta.slug,
+    previewImage: blogpost.meta.previewImage,
+    siteName: 'firrj.me',
+    title: blogpost.meta.title,
+    desc: blogpost.meta.description,
+  };
   return (
-    <PageLayout title={blogpost.meta.title}>
+    <PageLayout title={blogpost.meta.title} metaTags={metaTags}>
       <div className='font-sans'>
         <div className='mb-10'>
           <h1 className='font-bold text-3xl'>{blogpost.meta.title}</h1>

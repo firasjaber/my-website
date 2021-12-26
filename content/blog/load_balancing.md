@@ -3,6 +3,7 @@ title: Load balancing using NGINX and Docker.
 description: what is load balancing, and how to scale a nodejs api instances with NGINX and Docker using round-robin method by simple configurations
 written_at: 22/12/2021
 author: Firas Jaber
+preview_image: https://i.imgur.com/y30lhDJ.png
 ---
 
 ## Introduction

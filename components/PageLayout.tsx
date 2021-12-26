@@ -13,9 +13,16 @@ const variants = {
 
 interface Props {
   title?: string;
+  metaTags?: {
+    url: string;
+    previewImage: string;
+    siteName: string;
+    title: string;
+    desc: string;
+  };
 }
 
-export const PageLayout: React.FC<Props> = ({ children, title }) => {
+export const PageLayout: React.FC<Props> = ({ children, title, metaTags }) => {
   useEffect(() => {
     var c = document.getElementById('canv') as HTMLCanvasElement;
     var $: CanvasRenderingContext2D | any = c.getContext('2d');
@@ -60,6 +67,33 @@ export const PageLayout: React.FC<Props> = ({ children, title }) => {
       <Head>
         <title>{title ? 'Firas Jaber | ' + title : 'Firas Jaber'}</title>
         <meta name='description' content='Firas Jaber Personal Website' />
+        {metaTags && (
+          <meta property='og:url' content={metaTags.url} key='ogurl' />
+        )}
+        {metaTags && (
+          <meta
+            property='og:image'
+            content={metaTags.previewImage}
+            key='ogimage'
+          />
+        )}
+        {metaTags && (
+          <meta
+            property='og:site_name'
+            content={metaTags.siteName}
+            key='ogsitename'
+          />
+        )}
+        {metaTags && (
+          <meta property='og:title' content={metaTags.title} key='ogtitle' />
+        )}
+        {metaTags && (
+          <meta
+            property='og:description'
+            content={metaTags.desc}
+            key='ogdesc'
+          />
+        )}
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <canvas id='canv' width='32' height='32'></canvas>
