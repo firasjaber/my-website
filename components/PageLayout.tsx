@@ -72,7 +72,7 @@ export const PageLayout: React.FC<Props> = ({ children, title, metaTags }) => {
         )}
         {metaTags && (
           <meta
-            property='og:image'
+            property='og:image:secure_url'
             content={metaTags.previewImage}
             key='ogimage'
           />
